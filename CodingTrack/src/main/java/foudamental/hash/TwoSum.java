@@ -1,4 +1,4 @@
-package foudamental.array;
+package foudamental.hash;
 
 import java.util.Arrays;
 import java.util.HashMap;
