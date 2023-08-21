@@ -11,6 +11,10 @@ public class MinNumberDisappeared {
 }
 
 class MinNumberDisappearedSolution {
+    /**
+     * @param nums array of int
+     * @return int
+     */
     public int minNumberDisappeared(int[] nums) {
         //base case
         if (nums.length == 0 || nums == null) return -1;
