@@ -3,7 +3,6 @@ package String;
 public class Trans {
     public static void main(String[] args) {
 //        StringBuilder sb = new StringBuilder();
-//
 //        appending strings
 //        sb.append("Hello");
 //        sb.append(" ");
@@ -22,20 +21,15 @@ public class Trans {
         int n = 16;
         TransSolution ts = new TransSolution();
         System.out.println(ts.trans(s,n));
-
-
     }
 }
-
 
 
 class TransSolution {
     //upper case to lower case or lower case to upper case
     public String helper(String str){
-
         //auxiliary data structs
         StringBuilder sb = new StringBuilder();
-
         for(int i = 0; i <= str.length() - 1; i++){
             Character c = str.charAt(i);
 
@@ -47,6 +41,7 @@ class TransSolution {
         }
         return sb.toString();
     }
+
 
     public String trans(String s, int n){
         //auxiliary data structs
