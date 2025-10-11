@@ -1,6 +1,6 @@
 package String;
 
-public class StringNoTwo {
+public class UniqueCharacters {
     public boolean isUnique(String s){
         if(s.length() > 128) return false;
 
@@ -18,7 +18,7 @@ public class StringNoTwo {
     }
 
     public static void main(String[] args) {
-        StringNoTwo stringNoTwo = new StringNoTwo();
+        UniqueCharacters stringNoTwo = new UniqueCharacters();
         System.out.println(stringNoTwo.isUnique("abda"));
     }
 }
