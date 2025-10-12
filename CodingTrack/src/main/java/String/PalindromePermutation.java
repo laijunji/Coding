@@ -21,9 +21,28 @@ public class PalindromePermutation {
         return oddCnt <= 1;
     }
 
+    public boolean canPermutePalindromeOptimized(String s){
+        char[] charArray = s.toCharArray();
+
+        int[] char_t = new int[128];
+
+        for (char c : charArray) {
+            char_t[c]++;
+        }
+
+        int oddCnt = 0;
+        for (int i : char_t) {
+            if(i % 2 != 0){
+                oddCnt++;
+            }
+        }
+        return oddCnt <= 1;
+    }
+
 
     public static void main(String[] args) {
         PalindromePermutation p = new PalindromePermutation();
         System.out.println(p.canPermutePalindrome("aabbccd"));
+        System.out.println(p.canPermutePalindromeOptimized("aabbccd"));
     }
 }
